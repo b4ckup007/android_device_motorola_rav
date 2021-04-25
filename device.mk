@@ -23,6 +23,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/motorola/rav/rav-vendor.mk)
 
+# rav_overlay
+PRODUCT_PACKAGES += \
+    MotoRav
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
@@ -130,11 +134,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.motorola_trinket
 
-
-# Livedisplay
-PRODUCT_PACKAGES += \
-    lineage.livedisplay@2.0-service-sdm
-
 # QTI Bluetooth
 PRODUCT_PACKAGES += \
     BluetoothQti
@@ -150,8 +149,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
-# NFC
-PRODUCT_PACKAGES += \
 # NFC
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
@@ -226,3 +223,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+# BootFix
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.control_privapp_permissions=log
