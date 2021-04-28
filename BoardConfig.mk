@@ -14,17 +14,13 @@
 # limitations under the License.
 #
 
-COMMON_PATH := device/motorola/rav
+COMMON_PATH := device/motorola/sofiar
 
 BOARD_VENDOR := motorola
 
 TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
 
 BUILD_BROKEN_DUP_RULES := true
-
-# Boot animation
-TARGET_SCREEN_HEIGHT := 1520
-TARGET_SCREEN_WIDTH := 720
 
 # Display
 TARGET_SCREEN_DENSITY := 420
@@ -66,11 +62,11 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/motorola/sm6125
+TARGET_KERNEL_SOURCE := kernel/motorola/trinket
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := r365631c
 
-TARGET_KERNEL_CONFIG := vendor/rav_defconfig
+TARGET_KERNEL_CONFIG := vendor/sofiar_defconfig
 
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
@@ -121,9 +117,6 @@ TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(COMMON_PATH)/framework_manifest.xml
-
-# Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_moto_trinket
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
@@ -183,4 +176,4 @@ BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 1
 
 # Inherit from the proprietary version
--include vendor/motorola/rav/BoardConfigVendor.mk
+-include vendor/motorola/sofiar/BoardConfigVendor.mk

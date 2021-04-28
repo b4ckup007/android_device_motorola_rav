@@ -24,17 +24,19 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from common.mk
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# Device
 PRODUCT_BRAND := Motorola
-PRODUCT_DEVICE := rav
+PRODUCT_DEVICE := sofiar
 PRODUCT_MANUFACTURER := Motorola
-PRODUCT_NAME := lineage_rav
-PRODUCT_MODEL := motog(8)
+PRODUCT_NAME := lineage_sofiar
+PRODUCT_MODEL := moto g8 power
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
-TARGET_VENDOR_PRODUCT_NAME := rav
+TARGET_VENDOR := motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="motorola rav_reteu/rav 10 QPJS30.63-35-1-15/37df17 user/release-keys"
+    PRIVATE_BUILD_DESC="motorola sofiar_retail/sofiar 10 QPES30.79-124-9/97554 user/release-keys"
 
-BUILD_FINGERPRINT := motorola/rav_reteu/rav:10/QPJS30.63-35-1-15/37df17:user/release-keys
+# Fingerprint
+BUILD_FINGERPRINT := motorola/sofiar_retail/sofiar:10/QPES30.79-124-9/97554/97554:user/release-keys

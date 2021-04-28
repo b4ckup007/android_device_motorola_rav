@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_mainBuiltInDisplayCutout">M 128,0 L 0,0 L 0,120 L 128,120 Z @left</string>
+    <string name="config_mms_user_agent">motog8power</string>
+    <string name="wifi_tether_configure_ssid_default">moto g(8) power</string>
+    <integer-array name="config_autoBrightnessDisplayValuesNits">
+        <array name="config_autoBrightnessDisplayValuesNits">
+        <item>3</item>
+        <item>18</item>
+        <item>63</item>
+        <item>100</item>
+        <item>120</item>
+        <item>150</item>
+        <item>180</item>
+        <item>180</item>
+        <item>180</item>
+        <item>180</item>
+        <item>225</item>
+        <item>270</item>
+        <item>300</item>
+        <item>320</item>
+        <item>360</item>
+        <item>450</item>
+        <item>450</item>
+        <item>450</item>
+        <item>450</item>
+    </integer-array>
+    <integer-array name="config_autoBrightnessLevels">
+        <item>2</item>
+        <item>10</item>
+        <item>50</item>
+        <item>90</item>
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>800</item>
+        <item>1000</item>
+        <item>1300</item>
+        <item>1500</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>4000</item>
+        <item>8000</item>
+    </integer-array>
+    <integer-array name="config_screenBrightnessBacklight">
+        <item>2</item>
+        <item>10</item>
+        <item>36</item>
+        <item>57</item>
+        <item>68</item>
+        <item>85</item>
+        <item>102</item>
+        <item>128</item>
+        <item>153</item>
+        <item>170</item>
+        <item>181</item>
+        <item>204</item>
+        <item>255</item>
+    </integer-array>
+    <integer-array name="config_screenBrightnessNits">
+        <item>3</item>
+        <item>18</item>
+        <item>63</item>
+        <item>100</item>
+        <item>120</item>
+        <item>150</item>
+        <item>180</item>
+        <item>225</item>
+        <item>270</item>
+        <item>300</item>
+        <item>320</item>
+        <item>360</item>
+        <item>450</item>
+    </integer-array>
+    <integer-array name="config_virtualKeyVibePattern">
+        <item>28</item>
+    </integer-array>
+    <dimen name="quick_qs_offset_height">122px</dimen>
+    <dimen name="status_bar_height">122px</dimen>
+    <dimen name="status_bar_height_portrait">122px</dimen>
+    <dimen name="status_bar_height_landscape">26dp</dimen>
+    <dimen name="status_bar_icon_size">24dp</dimen>
+    <dimen name="rounded_corner_radius">95px</dimen>
+</resources>
+
+
