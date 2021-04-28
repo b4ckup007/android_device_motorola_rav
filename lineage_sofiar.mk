@@ -40,3 +40,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Fingerprint
 BUILD_FINGERPRINT := motorola/sofiar_retail/sofiar:10/QPES30.79-124-9/97554/97554:user/release-keys
+
+# Bootanimation Resolution
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Gapps
+TARGET_GAPPS_ARCH := arm64
