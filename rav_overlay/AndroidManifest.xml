@@ -18,13 +18,11 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     android:compileSdkVersion="29"
-    package="org.omnirom.overlay.moto.sofiar"
+    package="org.omnirom.overlay.moto.rav"
     platformBuildVersionCode="29">
     <application android:extractNativeLibs="false"/>
     <overlay
-        android:isStatic="true"
-        android:priority="10"
-        android:requiredSystemPropertyName="ro.product.device"
-        android:requiredSystemPropertyValue="sofiar"
+        android:isStatic="false"
+        android:priority="192"
         android:targetPackage="android"/>
 </manifest>

@@ -21,11 +21,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/motorola/sofiar/sofiar-vendor.mk)
+$(call inherit-product, vendor/motorola/rav/rav-vendor.mk)
 
-# sofiar_overlay
+# rav_overlay
 PRODUCT_PACKAGES += \
-    MotoSofiarR
+    MotoRav
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \

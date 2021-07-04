@@ -118,6 +118,9 @@ TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(COMMON_PATH)/framework_manifest.xml
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):libinit_moto_trinket
+
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
@@ -176,4 +179,4 @@ BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 1
 
 # Inherit from the proprietary version
--include vendor/motorola/sofiar/BoardConfigVendor.mk
+-include vendor/motorola/rav/BoardConfigVendor.mk

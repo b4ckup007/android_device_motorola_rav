@@ -36,7 +36,7 @@ import org.lineageos.settings.device.ServiceWrapper.LocalBinder;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
     static final String TAG = "LineageActions";
-    static final String sofiarOverlayPackageName = "org.omnirom.overlay.moto.sofiar";
+    static final String ravOverlayPackageName = "org.omnirom.overlay.moto.rav";
     private ServiceWrapper mServiceWrapper;
     private static OverlayManager sOverlayService;
 
@@ -50,11 +50,11 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         }
         try {
             String deviceProp = SystemProperties.get("ro.product.product.device", "sofia");
-            if (deviceProp.contains("sofiar")) {
-                boolean isEnabled = sOverlayService.getOverlayInfo(sofiarOverlayPackageName,
+            if (deviceProp.contains("rav")) {
+                boolean isEnabled = sOverlayService.getOverlayInfo(ravOverlayPackageName,
                     UserHandle.myUserId()).isEnabled();
                 if (!isEnabled) {
-                    sOverlayService.setEnabled(sofiarOverlayPackageName, true,
+                    sOverlayService.setEnabled(ravOverlayPackageName, true,
                         UserHandle.myUserId());
                 }
             }
